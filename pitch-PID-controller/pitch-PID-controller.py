@@ -17,7 +17,6 @@ class DynamicModel():
     def handleControlMove(self,u):
         self.velocity1 = u+self.thrust
         self.velocity2 = -u+self.thrust
-        print(self.velocity1,self.velocity2)
         self.M = self.KThrust * self.l/2 * (self.velocity1**2 - self.velocity2**2)
         self.angleAcceleration = self.M/self.I
     def integrate(self,dt):
@@ -86,7 +85,7 @@ class Simulator():
             self.AnglePositionList.append(AnglePos)
             self.AngleAccelerationList.append(AngleAcc)
             uVelocity = self.controllerPosition.PID(AnglePos,self.dt)
-            print(uVelocity)
+            
             controllerVelocity.setDestValue(uVelocity)
             uAcceleration = self.controllerVelocity.PID(AngleVel,self.dt)
 
