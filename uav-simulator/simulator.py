@@ -58,7 +58,7 @@ class Simulator:
             end = self.controller.missionCompelete
             tm.sleep(self.dt)
         self.showPlots()
-
+#Вывод графиков, отображающих состояни БЛА во время полета по миссии
     def showPlots(self):
         fig = plt.figure(constrained_layout=True,figsize=(500,500))
         gs = fig.add_gridspec(4, 3)
@@ -122,8 +122,8 @@ class Simulator:
         AngleVelocityYaw.grid()
         AngleVelocityYaw.set_title('Angle Velocity Yaw')
         plt.show()
-            
-        
+
+#Упаковка и отправка данных по UDP сокету     
     def sendData(self,state):
         data = bytearray(struct.pack("ddddddddddddd",state[0],state[1],state[2],state[3],state[4],state[5],
                                      state[6],state[7],state[8],state[9],state[10],state[11],self.time))
