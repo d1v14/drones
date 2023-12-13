@@ -125,8 +125,9 @@ class UAVcontroller():
         rollAccCommand = self.rollRatePID.update(RollRateCommand,state[States.ROLL_RATE],dt)
         pitchAccCommand = self.pitchRatePID.update(PitchRateCommand,state[States.PITCH_RATE],dt)
         yawAccCommand = self.yawRatePID.update(YawRateCommand,state[States.YAW_RATE],dt)
-        
+
         self.mixer(rollAccCommand,pitchAccCommand,yawAccCommand,ThrustCommand)
+        
         self.u [0]= self.ThrustPID.saturation(self.u[0],cs.rotorsRpmMin,cs.rotorsRpmMax)
         self.u[1] = self.ThrustPID.saturation(self.u[1],cs.rotorsRpmMin,cs.rotorsRpmMax)
         self.u[2] = self.ThrustPID.saturation(self.u[2],cs.rotorsRpmMin,cs.rotorsRpmMax)

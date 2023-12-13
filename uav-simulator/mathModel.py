@@ -33,7 +33,7 @@ class QuadrocopterModel:
     #Вектор обработки входящего управляющего воздействия для обновления состояния БЛА
     def calculateCommand(self,cmd):
         #Высчитываем суммарную тягу роторов
-        self.rotorThrust[2] = (cmd**2 *self.kT).sum()\
+        self.rotorThrust[2] = (cmd**2 *self.kT).sum()
         #Высчитываем матрицу поворота по всем углам БЛА
         R = self.RotationMatrix3d(self.state[3][0],self.state[4][0],self.state[5][0])
         R.resize((3,3))
