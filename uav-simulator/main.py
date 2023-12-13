@@ -68,9 +68,9 @@ controller.rollAnglePosPID.setPidCoeff(16,0,0)
 controller.rollAnglePosPID.setIntgralLimit(0)
 controller.rollAnglePosPID.setCommandLimit(-60,60)
 
-controller.yawAnglePosPID.setPidCoeff(60,0,2)
+controller.yawAnglePosPID.setPidCoeff(20,0,0)
 controller.yawAnglePosPID.setIntgralLimit(0)
-controller.yawAnglePosPID.setCommandLimit(-60,60)
+controller.yawAnglePosPID.setCommandLimit(-120,120)
 
 
 
@@ -82,15 +82,14 @@ controller.rollRatePID.setPidCoeff(300,0,0)
 controller.rollRatePID.setIntgralLimit(1)
 controller.rollRatePID.setCommandLimit(-5000,5000)
 
-controller.yawRatePID.setPidCoeff(30,0,0)
+controller.yawRatePID.setPidCoeff(800,0,0)
 controller.yawRatePID.setIntgralLimit(0)
-controller.yawRatePID.setCommandLimit(-5000,5000)
+controller.yawRatePID.setCommandLimit(-15000,15000)
 
 model = QuadrocopterModel(cs.uavI,cs.uavMass,cs.kThrust,cs.kDrag,cs.l)
 
 simulator = Simulator(controller,model,cs.dt)
-# kp,ki,kd = calculateBestKPID(1000,model,controller,5)
-# print(kp,ki,kd)
-controller.setMission([[0,0,10,0],[5,2,7,0],[2,8,10,0],[3,5,12,0],[6,6,6,0],[6,5,10,0],[3,0,10,0],[1,1,1,0],[10,10,1,0]])
+controller.setMission([[0,0,10,3],[0,0,10,1],[5,1,7,1],[6,6,6,0.5],[6,5,10,2],[3,0,10,-1],[1,1,1,0],[10,10,1,0],[5,2,5,1]])
+
 simulator.run()
 

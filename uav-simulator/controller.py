@@ -45,10 +45,10 @@ class PID():
 
 class UAVcontroller():
     def __init__(self):
-        self.XDest = 5
-        self.YDest =10
-        self.ZDest = 8
-        self.yawDest = 0
+        self.XDest = 0
+        self.YDest =5
+        self.ZDest = 10
+        self.yawDest = np.pi/3
         self.missionIndex=0
         self.missionCompelete=0
         self.mission = list()
@@ -97,9 +97,6 @@ class UAVcontroller():
            self.missionIndex == len(self.mission)-1):
             self.missionCompelete = 1
 
-
-#TODO : попроповать без матрицы поворотаx
-
     def update(self,state,dt):
         LinearVelocityXCommand = self.xLinearPosPID.update(self.XDest,state[States.X],dt)
         LinearVelocityYCommand = self.yLinearPosPID.update(self.YDest,state[States.Y],dt)
@@ -109,31 +106,32 @@ class UAVcontroller():
         ThrustCommand = self.ThrustPID.update(LinearVelocityZCOmmand,state[States.VZ],dt)
         ThrustCommand *= cs.kT
         ThrustCommand = self.ThrustPID.saturation(ThrustCommand,cs.rotorsRpmMin,cs.rotorsRpmMax)
-        targetPitchRoll = self.rotationMatrix2d(state[States.YAW][0])@ np.array([[PitchAngleCommand][0],[RollAngleCommand][0]])
+        targetPitchRoll = self.rotationMatrix2d(state[States.YAW][0]).transpose()@ np.array([[PitchAngleCommand][0],[RollAngleCommand][0]])
         RollCommand = targetPitchRoll[1]
         PitchCommand = targetPitchRoll[0]
-        RollRateCommand = self.rollAnglePosPID.update(RollCommand,state[States.ROLL],dt)
+        RollRateCommand = self.rollAnglePosPID.update(-RollCommand,state[States.ROLL],dt)
         PitchRateCommand = self.pitchAnglePosPID.update(PitchCommand,state[States.PITCH ],dt)
         YawRateCommand = self.yawAnglePosPID.update(self.yawDest,state[States.YAW],dt)
         rollAccCommand = self.rollRatePID.update(RollRateCommand,state[States.ROLL_RATE],dt)
         pitchAccCommand = self.pitchRatePID.update(PitchRateCommand,state[States.PITCH_RATE],dt)
         yawAccCommand = self.yawRatePID.update(YawRateCommand,state[States.YAW_RATE],dt)
         self.mixer(rollAccCommand,pitchAccCommand,yawAccCommand,ThrustCommand)
+        self.u [0]= self.ThrustPID.saturation(self.u[0],cs.rotorsRpmMin,cs.rotorsRpmMax)
+        self.u[1] = self.ThrustPID.saturation(self.u[1],cs.rotorsRpmMin,cs.rotorsRpmMax)
+        self.u[2] = self.ThrustPID.saturation(self.u[2],cs.rotorsRpmMin,cs.rotorsRpmMax)
+        self.u[3]= self.ThrustPID.saturation(self.u[3],cs.rotorsRpmMin,cs.rotorsRpmMax)
         self.checkMission(state)
         return self.u
     
     def mixer(self,roll,pitch,yaw,thrust):
-        # roll = 0
-        # pitch = 0
-        yaw = 0
-        self.u[0] = thrust +roll - yaw
+        self.u[0] = thrust + roll - yaw
         self.u[1] = thrust - pitch +yaw
         self.u[2] = thrust - roll  - yaw
         self.u[3] = thrust +pitch +yaw 
 
 
     def rotationMatrix2d(self,theta):
-        return np.array([[np.cos(theta),np.sin(theta)],
-                         [-np.sin(theta),np.cos(theta)]])
+        return np.array([[np.cos(theta),-np.sin(theta)],
+                         [np.sin(theta),np.cos(theta)]])
     
     
