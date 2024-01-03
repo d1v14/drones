@@ -1,0 +1,8 @@
+prefix=/home/dmitry/skillboxDronesROS/task5/devel
+
+Name: uav_controller
+Description: Description of uav_controller
+Version: 0.0.1
+Cflags: -I/home/dmitry/skillboxDronesROS/task5/src/uav_controller/include
+Libs: -L${prefix}/lib 
+Requires: roscpp
