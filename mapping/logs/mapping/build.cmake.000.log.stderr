@@ -1,0 +1,10 @@
+[31m[1mCMake Error[0m at /opt/ros/noetic/share/catkin/cmake/catkin_package_xml.cmake:54 (message):
+  catkin_package_xml() package name 'mapping' in
+  '/home/dmitry/drones/mapping/src/mapping/package.xml' does not match
+  current PROJECT_NAME 'optical_flow'.  You must call project() with the same
+  package name before.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:99 (catkin_package_xml)
+  CMakeLists.txt:104 (catkin_package)
+
+
