@@ -1,0 +1,2 @@
+mappingCpp
+-DCATKIN_DEVEL_PREFIX=/home/dmitry/drones/mappingCpp/devel -DCMAKE_INSTALL_PREFIX=/home/dmitry/drones/mappingCpp/install -G Unix Makefiles

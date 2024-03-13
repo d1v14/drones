@@ -1,0 +1,2 @@
+optical_flow
+-DCATKIN_DEVEL_PREFIX=/home/dmitry/drones/visualNavigation/devel -DCMAKE_INSTALL_PREFIX=/home/dmitry/drones/visualNavigation/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/dmitry/drones/visualNavigation/install
+
+Name: optical_flow
+Description: Description of optical_flow
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

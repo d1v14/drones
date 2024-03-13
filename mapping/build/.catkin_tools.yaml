@@ -1,0 +1,6 @@
+devel_space: /home/dmitry/drones/mapping/devel
+install: false
+install_space: /home/dmitry/drones/mapping/install
+profile: default
+source_space: /home/dmitry/drones/mapping/src
+workspace: /home/dmitry/drones/mapping

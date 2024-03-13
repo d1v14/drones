@@ -1,0 +1,12 @@
+Symlinking /home/dmitry/drones/mapping/devel/./_setup_util.py
+Symlinking /home/dmitry/drones/mapping/devel/./setup.sh
+Symlinking /home/dmitry/drones/mapping/devel/./setup.zsh
+Symlinking /home/dmitry/drones/mapping/devel/./env.sh
+Symlinking /home/dmitry/drones/mapping/devel/./local_setup.zsh
+Symlinking /home/dmitry/drones/mapping/devel/./local_setup.bash
+Symlinking /home/dmitry/drones/mapping/devel/./local_setup.sh
+Symlinking /home/dmitry/drones/mapping/devel/./cmake.lock
+Symlinking /home/dmitry/drones/mapping/devel/./setup.bash
+Symlinking /home/dmitry/drones/mapping/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/dmitry/drones/mapping/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/dmitry/drones/mapping/devel/lib/pkgconfig/catkin_tools_prebuild.pc
