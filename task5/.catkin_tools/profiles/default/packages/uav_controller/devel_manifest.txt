@@ -1,0 +1,2 @@
+uav_controller
+/home/dmitry/skillboxDronesROS/task5/devel/.private/uav_controller/cmake.lock /home/dmitry/skillboxDronesROS/task5/devel/./cmake.lock
