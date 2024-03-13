@@ -1,2 +1,2 @@
 uav_controller
--DCATKIN_DEVEL_PREFIX=/home/dmitry/skillboxDronesROS/task5/devel -DCMAKE_INSTALL_PREFIX=/home/dmitry/skillboxDronesROS/task5/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/dmitry/drones/task5/devel -DCMAKE_INSTALL_PREFIX=/home/dmitry/drones/task5/install -G Unix Makefiles

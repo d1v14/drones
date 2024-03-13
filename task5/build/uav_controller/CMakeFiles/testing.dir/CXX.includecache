@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dmitry/skillboxDronesROS/task5/src/uav_controller/include/uav_controller.hpp
+/home/dmitry/drones/task5/src/uav_controller/include/uav_controller.hpp
 ros/ros.h
 -
 geometry_msgs/PoseStamped.h
@@ -20,13 +20,9 @@ mavros_msgs/State.h
 mavros_msgs/PositionTarget.h
 -
 
-/home/dmitry/skillboxDronesROS/task5/src/uav_controller/src/uav_controller_node.cpp
-ros/ros.h
--
-geometry_msgs/PoseStamped.h
--
+/home/dmitry/drones/task5/src/uav_controller/src/uav_controller.cpp
 uav_controller.hpp
--
+/home/dmitry/drones/task5/src/uav_controller/src/uav_controller.hpp
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "uav_controller_node");
 	ros::NodeHandle n;
 	geometry_msgs::PoseStamped		desPose;
-	ros::Rate 				rate(50);
+	ros::Rate 				rate(60);
 	ros::NodeHandle &s = n;
 	std::string name("Drone");
 	UavController controller(s,name);

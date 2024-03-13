@@ -1,4 +1,4 @@
-prefix=/home/dmitry/skillboxDronesROS/task5/install
+prefix=/home/dmitry/drones/task5/install
 
 Name: uav_controller
 Description: Description of uav_controller

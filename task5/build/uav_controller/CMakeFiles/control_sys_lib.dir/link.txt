@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/dmitry/skillboxDronesROS/task5/devel/lib/libcontrol_sys_lib.a  CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.o
-/usr/bin/ranlib /home/dmitry/skillboxDronesROS/task5/devel/lib/libcontrol_sys_lib.a
+/usr/bin/ar qc /home/dmitry/drones/task5/devel/lib/libcontrol_sys_lib.a  CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.o
+/usr/bin/ranlib /home/dmitry/drones/task5/devel/lib/libcontrol_sys_lib.a

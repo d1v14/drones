@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/dmitry/skillboxDronesROS/task5/src
-# Build directory: /home/dmitry/skillboxDronesROS/task5/build
+# Source directory: /home/dmitry/drones/task5/src
+# Build directory: /home/dmitry/drones/task5/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

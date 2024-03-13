@@ -13,9 +13,9 @@ int main(int argc, char **argv)
 	ros::Publisher					desPosePub = n.advertise<geometry_msgs::PoseStamped>("/vehicle/desPose", 1);
 	double							counter = 0;
 	double							counterStep = 0.01;	
-	double							circleRadius = 5;	
-	ros::Rate 						rate(20);
-	desPose.pose.position.z = 3;
+	double							circleRadius = 4;
+	ros::Rate 						rate(30);
+	desPose.pose.position.z = 2;
 	while(ros::ok())
 	{
 		desPose.pose.position.x = circleRadius * std::cos(counter);

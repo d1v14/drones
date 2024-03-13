@@ -28,10 +28,10 @@ void	UavController::rosNodeInit()
 	// здесь должна быть инициализация объектов издателя и подписчика для получения информации из необходимых топиков
 	// пример инициализации подписки на топик желаемого положения ЛА
 
-	destVelocityPub = this->n.advertise<mavros_msgs::PositionTarget>("mavros/setpoint_raw/local", 10);
+	destVelocityPub = this->n.advertise<mavros_msgs::PositionTarget>("/mavros/setpoint_raw/local", 10);
 	// local_pos_pub = n.advertise<geometry_msgs::PoseStamped>("mavros/setpoint_position/local", 10);
-	stateSub = this->n.subscribe<mavros_msgs::State>("mavros/state",10,&UavController::uavStateCallback,this);
-	localPositionSub = this->n.subscribe<geometry_msgs::PoseStamped>("mavros/local_position/pose",10,&UavController::localPositionCallback,this);
+	stateSub = this->n.subscribe<mavros_msgs::State>("/mavros/state",10,&UavController::uavStateCallback,this);
+	localPositionSub = this->n.subscribe<geometry_msgs::PoseStamped>("/mavros/local_position/pose",10,&UavController::localPositionCallback,this);
 	destPosSub = this->n.subscribe<geometry_msgs::PoseStamped>("/vehicle/desPose", 1, &UavController::desiredPositionCallback,this);
 
 	setArmingClient = this->n.serviceClient<mavros_msgs::CommandBool>("/mavros/cmd/arming");
@@ -41,12 +41,14 @@ void	UavController::rosNodeInit()
 
 void	UavController::uavStateCallback(const mavros_msgs::State::ConstPtr& msg)
 {
+	ROS_INFO("STATE CALLBACK");
     this->currentState = *msg;
 }
 
 
 void    UavController::localPositionCallback(const geometry_msgs::PoseStamped localPose)
 {
+	ROS_INFO("POSITION CALLBACK");
 	this->currentPoseLocal = localPose;
 }
 
@@ -75,9 +77,11 @@ void	UavController::calculateAndSendSetpoint()
 	errory = this->destPoint.pose.position.y - this->currentPoseLocal.pose.position.y;
 	errorz = this->destPoint.pose.position.z - this->currentPoseLocal.pose.position.z;
 
-	setPoint.velocity.x = errorx;
-	setPoint.velocity.y = errory;
-	setPoint.velocity.z = errorz;
+	// setPoint.velocity.x = 0.1*errorx;
+	// setPoint.velocity.y = 0.1*errory;
+	setPoint.velocity.x = 0.15*errorx;
+	setPoint.velocity.y = 0.15*errory;
+	setPoint.velocity.z = 0.5*errorz;
 	destVelocityPub.publish(setPoint);
 	
 }

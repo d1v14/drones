@@ -1,8 +1,8 @@
-# Install script for directory: /home/dmitry/skillboxDronesROS/task5/src/uav_controller
+# Install script for directory: /home/dmitry/drones/task5/src/uav_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dmitry/skillboxDronesROS/task5/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dmitry/drones/task5/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dmitry/skillboxDronesROS/task5/build/uav_controller/catkin_generated/installspace/uav_controller.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dmitry/drones/task5/build/uav_controller/catkin_generated/installspace/uav_controller.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_controller/cmake" TYPE FILE FILES
-    "/home/dmitry/skillboxDronesROS/task5/build/uav_controller/catkin_generated/installspace/uav_controllerConfig.cmake"
-    "/home/dmitry/skillboxDronesROS/task5/build/uav_controller/catkin_generated/installspace/uav_controllerConfig-version.cmake"
+    "/home/dmitry/drones/task5/build/uav_controller/catkin_generated/installspace/uav_controllerConfig.cmake"
+    "/home/dmitry/drones/task5/build/uav_controller/catkin_generated/installspace/uav_controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_controller" TYPE FILE FILES "/home/dmitry/skillboxDronesROS/task5/src/uav_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_controller" TYPE FILE FILES "/home/dmitry/drones/task5/src/uav_controller/package.xml")
 endif()
 

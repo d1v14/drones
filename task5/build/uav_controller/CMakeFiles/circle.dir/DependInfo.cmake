@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dmitry/skillboxDronesROS/task5/src/uav_controller/src/uav_circle_fly_example.cpp" "/home/dmitry/skillboxDronesROS/task5/build/uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.o"
+  "/home/dmitry/drones/task5/src/uav_controller/src/uav_circle_fly_example.cpp" "/home/dmitry/drones/task5/build/uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/dmitry/skillboxDronesROS/task5/src/uav_controller/include"
+  "/home/dmitry/drones/task5/src/uav_controller/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

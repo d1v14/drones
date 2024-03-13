@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dmitry/skillboxDronesROS/task5/src
+CMAKE_SOURCE_DIR = /home/dmitry/drones/task5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dmitry/skillboxDronesROS/task5/build
+CMAKE_BINARY_DIR = /home/dmitry/drones/task5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/skillboxDronesROS/task5/build/CMakeFiles /home/dmitry/skillboxDronesROS/task5/build/uav_controller/CMakeFiles/progress.marks
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/skillboxDronesROS/task5/build/CMakeFiles 0
+	cd /home/dmitry/drones/task5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/drones/task5/build/CMakeFiles /home/dmitry/drones/task5/build/uav_controller/CMakeFiles/progress.marks
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/drones/task5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/clean
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/preinstall
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/preinstall
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dmitry/drones/task5/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 uav_controller/CMakeFiles/circle.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/circle.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/circle.dir/rule
 .PHONY : uav_controller/CMakeFiles/circle.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ circle: uav_controller/CMakeFiles/circle.dir/rule
 
 # fast build rule for target.
 circle/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/build
 .PHONY : circle/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/testing.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/testing.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/testing.dir/rule
 .PHONY : uav_controller/CMakeFiles/testing.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ testing: uav_controller/CMakeFiles/testing.dir/rule
 
 # fast build rule for target.
 testing/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/build
 .PHONY : testing/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ sensor_msgs_generate_messages_nodejs: uav_controller/CMakeFiles/sensor_msgs_gene
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ uuid_msgs_generate_messages_py: uav_controller/CMakeFiles/uuid_msgs_generate_mes
 
 # fast build rule for target.
 uuid_msgs_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
 .PHONY : uuid_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ uuid_msgs_generate_messages_nodejs: uav_controller/CMakeFiles/uuid_msgs_generate
 
 # fast build rule for target.
 uuid_msgs_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
 .PHONY : uuid_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ sensor_msgs_generate_messages_lisp: uav_controller/CMakeFiles/sensor_msgs_genera
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ geographic_msgs_generate_messages_py: uav_controller/CMakeFiles/geographic_msgs_
 
 # fast build rule for target.
 geographic_msgs_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
 .PHONY : geographic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ rosgraph_msgs_generate_messages_py: uav_controller/CMakeFiles/rosgraph_msgs_gene
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ roscpp_generate_messages_lisp: uav_controller/CMakeFiles/roscpp_generate_message
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ geometry_msgs_generate_messages_cpp: uav_controller/CMakeFiles/geometry_msgs_gen
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ geometry_msgs_generate_messages_nodejs: uav_controller/CMakeFiles/geometry_msgs_
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ rosgraph_msgs_generate_messages_lisp: uav_controller/CMakeFiles/rosgraph_msgs_ge
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/control_sys_lib.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/control_sys_lib.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/control_sys_lib.dir/rule
 .PHONY : uav_controller/CMakeFiles/control_sys_lib.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ control_sys_lib: uav_controller/CMakeFiles/control_sys_lib.dir/rule
 
 # fast build rule for target.
 control_sys_lib/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/build
 .PHONY : control_sys_lib/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ rosgraph_msgs_generate_messages_eus: uav_controller/CMakeFiles/rosgraph_msgs_gen
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ std_msgs_generate_messages_cpp: uav_controller/CMakeFiles/std_msgs_generate_mess
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ uuid_msgs_generate_messages_lisp: uav_controller/CMakeFiles/uuid_msgs_generate_m
 
 # fast build rule for target.
 uuid_msgs_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
 .PHONY : uuid_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ rosgraph_msgs_generate_messages_cpp: uav_controller/CMakeFiles/rosgraph_msgs_gen
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ roscpp_generate_messages_nodejs: uav_controller/CMakeFiles/roscpp_generate_messa
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ geometry_msgs_generate_messages_lisp: uav_controller/CMakeFiles/geometry_msgs_ge
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ roscpp_generate_messages_py: uav_controller/CMakeFiles/roscpp_generate_messages_
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ uuid_msgs_generate_messages_cpp: uav_controller/CMakeFiles/uuid_msgs_generate_me
 
 # fast build rule for target.
 uuid_msgs_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
 .PHONY : uuid_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ std_msgs_generate_messages_lisp: uav_controller/CMakeFiles/std_msgs_generate_mes
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ rosgraph_msgs_generate_messages_nodejs: uav_controller/CMakeFiles/rosgraph_msgs_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ roscpp_generate_messages_eus: uav_controller/CMakeFiles/roscpp_generate_messages
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ sensor_msgs_generate_messages_eus: uav_controller/CMakeFiles/sensor_msgs_generat
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ roscpp_generate_messages_cpp: uav_controller/CMakeFiles/roscpp_generate_messages
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ sensor_msgs_generate_messages_py: uav_controller/CMakeFiles/sensor_msgs_generate
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ geometry_msgs_generate_messages_py: uav_controller/CMakeFiles/geometry_msgs_gene
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ mavros_msgs_generate_messages_nodejs: uav_controller/CMakeFiles/mavros_msgs_gene
 
 # fast build rule for target.
 mavros_msgs_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
 .PHONY : mavros_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ std_msgs_generate_messages_py: uav_controller/CMakeFiles/std_msgs_generate_messa
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ std_msgs_generate_messages_nodejs: uav_controller/CMakeFiles/std_msgs_generate_m
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ geometry_msgs_generate_messages_eus: uav_controller/CMakeFiles/geometry_msgs_gen
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ mavros_msgs_generate_messages_cpp: uav_controller/CMakeFiles/mavros_msgs_generat
 
 # fast build rule for target.
 mavros_msgs_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
 .PHONY : mavros_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ mavros_msgs_generate_messages_eus: uav_controller/CMakeFiles/mavros_msgs_generat
 
 # fast build rule for target.
 mavros_msgs_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
 .PHONY : mavros_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ mavros_msgs_generate_messages_lisp: uav_controller/CMakeFiles/mavros_msgs_genera
 
 # fast build rule for target.
 mavros_msgs_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
 .PHONY : mavros_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ uuid_msgs_generate_messages_eus: uav_controller/CMakeFiles/uuid_msgs_generate_me
 
 # fast build rule for target.
 uuid_msgs_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
 .PHONY : uuid_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ std_msgs_generate_messages_eus: uav_controller/CMakeFiles/std_msgs_generate_mess
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
 .PHONY : uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ mavros_msgs_generate_messages_py: uav_controller/CMakeFiles/mavros_msgs_generate
 
 # fast build rule for target.
 mavros_msgs_generate_messages_py/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make uav_controller/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
 .PHONY : mavros_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ geographic_msgs_generate_messages_cpp: uav_controller/CMakeFiles/geographic_msgs
 
 # fast build rule for target.
 geographic_msgs_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
 .PHONY : geographic_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
 .PHONY : uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ geographic_msgs_generate_messages_eus: uav_controller/CMakeFiles/geographic_msgs
 
 # fast build rule for target.
 geographic_msgs_generate_messages_eus/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
 .PHONY : geographic_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ sensor_msgs_generate_messages_cpp: uav_controller/CMakeFiles/sensor_msgs_generat
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make uav_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
 .PHONY : uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ geographic_msgs_generate_messages_lisp: uav_controller/CMakeFiles/geographic_msg
 
 # fast build rule for target.
 geographic_msgs_generate_messages_lisp/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
 .PHONY : geographic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f CMakeFiles/Makefile2 uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
 .PHONY : uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -809,7 +809,7 @@ geographic_msgs_generate_messages_nodejs: uav_controller/CMakeFiles/geographic_m
 
 # fast build rule for target.
 geographic_msgs_generate_messages_nodejs/fast:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make uav_controller/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
 .PHONY : geographic_msgs_generate_messages_nodejs/fast
 
 src/uav_circle_fly_example.o: src/uav_circle_fly_example.cpp.o
@@ -818,7 +818,7 @@ src/uav_circle_fly_example.o: src/uav_circle_fly_example.cpp.o
 
 # target to build an object file
 src/uav_circle_fly_example.cpp.o:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.o
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.o
 .PHONY : src/uav_circle_fly_example.cpp.o
 
 src/uav_circle_fly_example.i: src/uav_circle_fly_example.cpp.i
@@ -827,7 +827,7 @@ src/uav_circle_fly_example.i: src/uav_circle_fly_example.cpp.i
 
 # target to preprocess a source file
 src/uav_circle_fly_example.cpp.i:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.i
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.i
 .PHONY : src/uav_circle_fly_example.cpp.i
 
 src/uav_circle_fly_example.s: src/uav_circle_fly_example.cpp.s
@@ -836,7 +836,7 @@ src/uav_circle_fly_example.s: src/uav_circle_fly_example.cpp.s
 
 # target to generate assembly for a file
 src/uav_circle_fly_example.cpp.s:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.s
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/circle.dir/build.make uav_controller/CMakeFiles/circle.dir/src/uav_circle_fly_example.cpp.s
 .PHONY : src/uav_circle_fly_example.cpp.s
 
 src/uav_controller.o: src/uav_controller.cpp.o
@@ -845,8 +845,8 @@ src/uav_controller.o: src/uav_controller.cpp.o
 
 # target to build an object file
 src/uav_controller.cpp.o:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller.cpp.o
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.o
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller.cpp.o
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.o
 .PHONY : src/uav_controller.cpp.o
 
 src/uav_controller.i: src/uav_controller.cpp.i
@@ -855,8 +855,8 @@ src/uav_controller.i: src/uav_controller.cpp.i
 
 # target to preprocess a source file
 src/uav_controller.cpp.i:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller.cpp.i
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.i
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller.cpp.i
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.i
 .PHONY : src/uav_controller.cpp.i
 
 src/uav_controller.s: src/uav_controller.cpp.s
@@ -865,8 +865,8 @@ src/uav_controller.s: src/uav_controller.cpp.s
 
 # target to generate assembly for a file
 src/uav_controller.cpp.s:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller.cpp.s
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.s
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller.cpp.s
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/control_sys_lib.dir/build.make uav_controller/CMakeFiles/control_sys_lib.dir/src/uav_controller.cpp.s
 .PHONY : src/uav_controller.cpp.s
 
 src/uav_controller_node.o: src/uav_controller_node.cpp.o
@@ -875,7 +875,7 @@ src/uav_controller_node.o: src/uav_controller_node.cpp.o
 
 # target to build an object file
 src/uav_controller_node.cpp.o:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller_node.cpp.o
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller_node.cpp.o
 .PHONY : src/uav_controller_node.cpp.o
 
 src/uav_controller_node.i: src/uav_controller_node.cpp.i
@@ -884,7 +884,7 @@ src/uav_controller_node.i: src/uav_controller_node.cpp.i
 
 # target to preprocess a source file
 src/uav_controller_node.cpp.i:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller_node.cpp.i
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller_node.cpp.i
 .PHONY : src/uav_controller_node.cpp.i
 
 src/uav_controller_node.s: src/uav_controller_node.cpp.s
@@ -893,7 +893,7 @@ src/uav_controller_node.s: src/uav_controller_node.cpp.s
 
 # target to generate assembly for a file
 src/uav_controller_node.cpp.s:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller_node.cpp.s
+	cd /home/dmitry/drones/task5/build && $(MAKE) -f uav_controller/CMakeFiles/testing.dir/build.make uav_controller/CMakeFiles/testing.dir/src/uav_controller_node.cpp.s
 .PHONY : src/uav_controller_node.cpp.s
 
 # Help Target
@@ -972,6 +972,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dmitry/skillboxDronesROS/task5/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dmitry/drones/task5/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
