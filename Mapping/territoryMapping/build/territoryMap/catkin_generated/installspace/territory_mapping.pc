@@ -1,0 +1,8 @@
+prefix=/home/dmitry/drones/territoryMapping/install
+
+Name: territory_mapping
+Description: Description of territory_mapping
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp

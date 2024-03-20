@@ -1,0 +1,8 @@
+prefix=/home/dmitry/drones/Mapping/mapProbaBresenham/devel
+
+Name: probability_bresenham
+Description: Description of probability_bresenham
+Version: 0.0.0
+Cflags: -I/home/dmitry/drones/Mapping/mapProbaBresenham/src/ProbabilityBresenham/include
+Libs: -L${prefix}/lib 
+Requires: roscpp

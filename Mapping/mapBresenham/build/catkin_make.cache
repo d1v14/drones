@@ -1,0 +1,2 @@
+BresenhamMapping
+-DCATKIN_DEVEL_PREFIX=/home/dmitry/drones/Mapping/mapBresenham/devel -DCMAKE_INSTALL_PREFIX=/home/dmitry/drones/Mapping/mapBresenham/install -G Unix Makefiles

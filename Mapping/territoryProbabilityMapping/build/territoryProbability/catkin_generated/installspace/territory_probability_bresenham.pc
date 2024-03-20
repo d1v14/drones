@@ -1,0 +1,8 @@
+prefix=/home/dmitry/drones/Mapping/territoryProbabilityMapping/install
+
+Name: territory_probability_bresenham
+Description: Description of territory_probability_bresenham
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp

@@ -1,0 +1,2 @@
+territoryMap
+-DCATKIN_DEVEL_PREFIX=/home/dmitry/drones/territoryMapping/devel -DCMAKE_INSTALL_PREFIX=/home/dmitry/drones/territoryMapping/install -G Unix Makefiles

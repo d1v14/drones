@@ -1,0 +1,8 @@
+prefix=/home/dmitry/drones/Mapping/mapBresenham/devel
+
+Name: bresenham_mapping
+Description: Description of bresenham_mapping
+Version: 0.0.0
+Cflags: -I/home/dmitry/drones/Mapping/mapBresenham/src/BresenhamMapping/include
+Libs: -L${prefix}/lib 
+Requires: roscpp
