@@ -1,1 +1,0 @@
-/home/dmitry/drones/mapping/devel/./cmake.lock 10

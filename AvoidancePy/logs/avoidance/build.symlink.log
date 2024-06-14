@@ -1,0 +1,12 @@
+Symlinking /home/dmitry/drones/AvoidancePy/devel/share/avoidance/cmake/avoidanceConfig.cmake
+Symlinking /home/dmitry/drones/AvoidancePy/devel/share/avoidance/cmake/avoidanceConfig-version.cmake
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/pkgconfig/avoidance.pc
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/histogram2d.py
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/flight_commander.py
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/map_visualizer.py
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/planer_base.py
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/simple_grid_map.py
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/path_visualization.py
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/cmake.lock
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/avoidance_system.py
+Symlinking /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/vfh2d_planner.py

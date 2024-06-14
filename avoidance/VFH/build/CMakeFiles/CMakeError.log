@@ -1,0 +1,58 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/dmitry/drones/avoidance/VFH/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9682c/fast && /usr/bin/make -f CMakeFiles/cmTC_9682c.dir/build.make CMakeFiles/cmTC_9682c.dir/build
+make[1]: вход в каталог «/home/dmitry/drones/avoidance/VFH/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_9682c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9682c.dir/src.c.o   -c /home/dmitry/drones/avoidance/VFH/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9682c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9682c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_9682c.dir/src.c.o  -o cmTC_9682c 
+/usr/bin/ld: CMakeFiles/cmTC_9682c.dir/src.c.o: в функции «main»:
+src.c:(.text+0x46): неопределённая ссылка на «pthread_create»
+/usr/bin/ld: src.c:(.text+0x52): неопределённая ссылка на «pthread_detach»
+/usr/bin/ld: src.c:(.text+0x63): неопределённая ссылка на «pthread_join»
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9682c.dir/build.make:87: cmTC_9682c] Ошибка 1
+make[1]: выход из каталога «/home/dmitry/drones/avoidance/VFH/build/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_9682c/fast] Ошибка 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dmitry/drones/avoidance/VFH/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_faf4a/fast && /usr/bin/make -f CMakeFiles/cmTC_faf4a.dir/build.make CMakeFiles/cmTC_faf4a.dir/build
+make[1]: вход в каталог «/home/dmitry/drones/avoidance/VFH/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_faf4a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_faf4a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_faf4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faf4a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_faf4a.dir/CheckFunctionExists.c.o  -o cmTC_faf4a  -lpthreads 
+/usr/bin/ld: невозможно найти -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_faf4a.dir/build.make:87: cmTC_faf4a] Ошибка 1
+make[1]: выход из каталога «/home/dmitry/drones/avoidance/VFH/build/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_faf4a/fast] Ошибка 2
+
+
+

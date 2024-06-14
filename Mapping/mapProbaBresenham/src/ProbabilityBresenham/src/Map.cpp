@@ -11,7 +11,7 @@ Map::Map(int sizeOfMapX ,int sizeOfMapY , int sizeOfMapZ , double resolution){
         this->startYinCages =  sizeOfMapY/2;
         this->startZinCages =  3;
         this->resolution = resolution;
-        this->bresCageP = 0.45;
+        this->bresCageP = 0.49;
         this->bresCageL = log(bresCageP/(1-bresCageP));
         this->startXinCoordinates = double(resolution * startXinCages);
         this->startYinCoordinates = double(resolution * startYinCages);

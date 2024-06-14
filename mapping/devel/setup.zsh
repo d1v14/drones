@@ -1,1 +1,0 @@
-/home/dmitry/drones/mapping/devel/.private/catkin_tools_prebuild/setup.zsh

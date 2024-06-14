@@ -1,0 +1,14 @@
+src
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/cmake.lock /home/dmitry/drones/AvoidancePy/devel/./cmake.lock
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/share/avoidance/cmake/avoidanceConfig.cmake /home/dmitry/drones/AvoidancePy/devel/share/avoidance/cmake/avoidanceConfig.cmake
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/share/avoidance/cmake/avoidanceConfig-version.cmake /home/dmitry/drones/AvoidancePy/devel/share/avoidance/cmake/avoidanceConfig-version.cmake
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/pkgconfig/avoidance.pc /home/dmitry/drones/AvoidancePy/devel/lib/pkgconfig/avoidance.pc
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/histogram2d.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/histogram2d.py
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/flight_commander.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/flight_commander.py
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/map_visualizer.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/map_visualizer.py
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/planer_base.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/planer_base.py
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/simple_grid_map.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/simple_grid_map.py
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/path_visualization.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/path_visualization.py
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/cmake.lock /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/cmake.lock
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/avoidance_system.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/avoidance_system.py
+/home/dmitry/drones/AvoidancePy/devel/.private/avoidance/lib/avoidance/vfh2d_planner.py /home/dmitry/drones/AvoidancePy/devel/lib/avoidance/vfh2d_planner.py

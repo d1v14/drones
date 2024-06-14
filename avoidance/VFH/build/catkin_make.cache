@@ -1,0 +1,2 @@
+VFH
+-DCATKIN_DEVEL_PREFIX=/home/dmitry/drones/avoidance/VFH/devel -DCMAKE_INSTALL_PREFIX=/home/dmitry/drones/avoidance/VFH/install -G Unix Makefiles

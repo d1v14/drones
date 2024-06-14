@@ -1,0 +1,8 @@
+prefix=/home/dmitry/drones/AvoidancePy/devel
+
+Name: avoidance
+Description: Description of avoidance
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

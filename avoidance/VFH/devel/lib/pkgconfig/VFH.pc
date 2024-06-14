@@ -1,0 +1,8 @@
+prefix=/home/dmitry/drones/avoidance/VFH/devel
+
+Name: VFH
+Description: Description of VFH
+Version: 0.0.1
+Cflags: -I/home/dmitry/drones/avoidance/VFH/src/VFH/include
+Libs: -L${prefix}/lib 
+Requires: roscpp

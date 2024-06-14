@@ -1,1 +1,0 @@
-/home/dmitry/drones/mapping/devel/.private/mapping/lib/mapping/mapping.py

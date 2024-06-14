@@ -41,14 +41,13 @@ void	UavController::rosNodeInit()
 
 void	UavController::uavStateCallback(const mavros_msgs::State::ConstPtr& msg)
 {
-	ROS_INFO("STATE CALLBACK");
     this->currentState = *msg;
 }
 
 
 void    UavController::localPositionCallback(const geometry_msgs::PoseStamped localPose)
 {
-	ROS_INFO("POSITION CALLBACK");
+
 	this->currentPoseLocal = localPose;
 }
 
@@ -79,9 +78,9 @@ void	UavController::calculateAndSendSetpoint()
 
 	// setPoint.velocity.x = 0.1*errorx;
 	// setPoint.velocity.y = 0.1*errory;
-	setPoint.velocity.x = 0.15*errorx;
-	setPoint.velocity.y = 0.15*errory;
-	setPoint.velocity.z = 0.5*errorz;
+	setPoint.velocity.x = 1*errorx;
+	setPoint.velocity.y = 1*errory;
+	setPoint.velocity.z = 1*errorz;
 	destVelocityPub.publish(setPoint);
 	
 }
@@ -91,9 +90,9 @@ void 	UavController::setPointTypeInit()
 	// задаем тип используемого нами сообщения для желаемых параметров управления аппаратом
 	// приведенная ниже конфигурация соответствует управлению линейной скоростью ЛА
 	// и угловой скоростью аппарата в канале рыскания(yaw)
-	unsigned int setpointTypeMask =	mavros_msgs::PositionTarget::IGNORE_PX  +
+	uint16_t setpointTypeMask =	mavros_msgs::PositionTarget::IGNORE_PX  +
 									mavros_msgs::PositionTarget::IGNORE_PY  +
-									mavros_msgs::PositionTarget::IGNORE_PX  +
+									mavros_msgs::PositionTarget::IGNORE_PZ  +
 									mavros_msgs::PositionTarget::IGNORE_AFX +
 									mavros_msgs::PositionTarget::IGNORE_AFY +
 									mavros_msgs::PositionTarget::IGNORE_AFZ +

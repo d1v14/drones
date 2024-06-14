@@ -13,7 +13,6 @@ void VoxelVisualizer::addMarker(double x, double y, double z,double value){
     visualization_msgs::Marker addMarker;
     addMarker.header.frame_id = "map";
     addMarker.type = visualization_msgs::Marker::CUBE;
-    addMarker.action = visualization_msgs::Marker::ADD;
     addMarker.pose.position.x = x;
     addMarker.pose.position.y = y;
     addMarker.pose.position.z = z;
@@ -24,14 +23,8 @@ void VoxelVisualizer::addMarker(double x, double y, double z,double value){
     addMarker.scale.x = size;
     addMarker.scale.y = size;
     addMarker.scale.z = size;
-    if(value<=0.15)
-    {
-        addMarker.color.r = 0;
-        addMarker.color.g = double(1- value);
-        addMarker.color.b = 0;
-        addMarker.color.a = value;
-    }
-    if(value>0.15 && value <0.8)
+
+    if(value>0.6 && value <0.8)
     {
         addMarker.color.r = 0;
         addMarker.color.b = double(value);
@@ -45,10 +38,6 @@ void VoxelVisualizer::addMarker(double x, double y, double z,double value){
         addMarker.color.g = 0;
         addMarker.color.a = value;
     }
-    // addMarker.color.r = double(value);
-    // addMarker.color.g = double(1- value);
-    // addMarker.color.b = double(value * 0.5);
-    // addMarker.color.a = value;
 
     markerArray.markers.push_back(addMarker);
 }

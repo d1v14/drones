@@ -8,6 +8,6 @@ int main(int argc, char **argv){
     ros::NodeHandle handle;
     tf2_ros::Buffer buffer;
     tf2_ros::TransformListener listener(buffer);
-    GridMapping gridmapping(handle,300,300,100,0.5,buffer,listener);
+    GridMapping gridmapping(handle,1000,1000,100,0.1,buffer,listener);
     ros::spin();
 }
